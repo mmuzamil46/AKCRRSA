@@ -414,10 +414,88 @@ height: 32px;
     height: 100vh;
 }
 .continer{
-    width: 1200px;
+    width: 90%;
+    max-width: 1200px;
     background-color: white;
     padding: 30px;
     box-shadow: 0 2px 16px rgba(0,0,0,0.1);
     border-radius: 20px;
-    height: 100%;
+   height: 90%;
+}
+.tab_box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid rgba(229,229,229);
+    white-space: nowrap; 
+    margin-bottom: 20px;
+ 
+}
+
+.tab_box .tab_btn{
+    font-size: 16px;
+    font-weight: 600;
+    color: #05395e;
+    border: none;
+    background: none;
+    padding: 12px 15px;
+cursor: pointer;
+transition: all 0.3s ease-in-out;
+}
+.tab_box .tab_btn.active{
+     color:white ;
+    background-color: #05395e ; 
+}
+.content_box{
+    padding: 10px;
+}
+.content_box .contant{
+    display: none;
+    animation: moving .5s ease;
+    padding: 10px;
+
+}
+@keyframes moving {
+    from{transform: translateX(50px);opacity: 0;}
+    to{transform: translateX(0px);opacity: 1;}
+    
+}
+.content_box .contant.active{
+    display: block;
+}
+.content_box .contant h2{
+    margin-bottom: 10px;
+}
+/* .line{
+    position: absolute;
+    top: 62px;
+    left: 0;
+    width: 90px;
+    height: 5px;
+    background-color: #05395e;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+} */
+@media screen and (max-width: 768px) {
+    .content_box{
+        margin-top: -100px;
+    }
+    .tab_box {
+       width:100%;
+        /* align-items: stretch; */
+    }
+
+    .tab_box .tab_btn {
+        padding: 10px; /* Further reduce padding for very small screens */
+        font-size: 14px;
+    }
+
+    .content_box .contant {
+        padding: 10px;
+        margin-top: 50px;
+    }
+    .continer.title-text{
+        font-size: 16px;
+    }
 }
