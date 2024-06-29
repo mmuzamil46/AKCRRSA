@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    /* display: grid;
+    justify-content: center;
+    align-content: end;
+    min-height: 100vh; */
+    /* padding: 50px; */
+   font-family: "Noto Serif Ethiopic", serif;;
+}
 a{
     text-decoration: none;
 }
@@ -497,5 +505,125 @@ transition: all 0.3s ease-in-out;
     }
     .continer.title-text{
         font-size: 16px;
+    }
+}
+/* footer */
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background-color: #05395e;
+
+}
+footer .f-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+footer .f-container .sec h3{
+    position: relative;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+footer .f-container .sec p{
+    color: white;
+}
+footer .f-container .sci{ 
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(6,50px);
+}
+footer .f-container .sci li{
+    list-style: none;
+    
+}
+footer .f-container .sci li a{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    text-decoration: none;
+    color: #05395e;
+    /* font-size: 100px; */
+    /* font-weight: 100; */
+}
+footer .f-container .sci li a i{
+    color: #05395e;
+    font-size: 25px; 
+}
+footer .f-container .quicklinks{
+    position: relative;
+}
+footer .f-container .quicklinks ul{
+    list-style: none;
+}
+footer .f-container .quicklinks ul li a{
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 12px;
+}
+footer .f-container .contact info{
+    position: relative;
+}
+footer .f-container .contact .info li{
+display: grid;
+grid-template-columns: 30px 1fr;
+margin-bottom: 16px;
+}
+footer .f-container .contact .info li span{
+    color: white;
+    font-size: 20px;
+}
+footer .f-container .contact .info li a{
+    color: white;
+    text-decoration: none;
+}
+.copyrightText{
+    width: 100%;
+    background: #05395e;
+    padding: 20px 100px 30px;
+    text-align: center;
+    color: #81a5b6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+@media screen and (max-width: 991px) {
+    footer{
+        padding: 30px;
+    }
+    footer .f-container{
+        width: 100%;
+        display: grid;
+        /* flex-wrap: wrap;
+        align-content: center; */
+        grid-template-columns: repeat(2,1fr); 
+         grid-gap: 10px;
+    }
+    /* footer .f-container .sec {
+        marg
+    } */
+     .copyrightText{
+        padding: 20px 40px 30px;
+     }
+   
+}
+@media screen and (max-width: 768px){
+
+       footer .f-container{
+        width: 100%;
+        display: grid;
+        /* flex-wrap: wrap;
+        align-content: center; */
+        grid-template-columns: repeat(1,1fr); 
+         grid-gap: 10px;
     }
 }
