@@ -513,7 +513,7 @@ footer{
     width: 100%;
     height: auto;
     padding: 50px 100px;
-    background-color: #05395e;
+    background-color: #073a59;
 
 }
 footer .f-container{
@@ -551,9 +551,11 @@ footer .f-container .sci li a{
     text-decoration: none;
     text-decoration: none;
     color: #05395e;
+ 
     /* font-size: 100px; */
     /* font-weight: 100; */
 }
+
 footer .f-container .sci li a i{
     color: #05395e;
     font-size: 25px; 
@@ -570,6 +572,12 @@ footer .f-container .quicklinks ul li a{
     margin-top: 10px;
     display: inline-block;
     font-size: 12px;
+}
+footer .f-container .quicklinks ul li{
+    transition: ease 0.5s;
+}
+footer .f-container .quicklinks ul li:hover{
+    transform: translate(10px,-5px);
 }
 footer .f-container .contact info{
     position: relative;
