@@ -510,6 +510,7 @@ transition: all 0.3s ease-in-out;
 /* footer */
 footer{
     position: relative;
+    bottom: 0;
     width: 100%;
     height: auto;
     padding: 50px 100px;
@@ -634,4 +635,38 @@ footer .f-container .contact .info li a{
         grid-template-columns: repeat(1,1fr); 
          grid-gap: 10px;
     }
+}
+.section{
+    width: 100%;
+    min-height: 100vh;
+    
+}
+.contyner{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.content-sect{
+    float: left;
+    width: 55%;
+}
+.image-sect{
+    float: right;
+    width: 40%;
+}
+.image-sect img{
+    width: 100%;
+    height: auto;
+}
+.content-sect .ttle{
+    font-size: 28px;
+}
+.content-sect .conttent h3{
+    margin-top: 20px;
+}
+.content-sect .conttent p{
+    margin-top: 10px;
+    font-size: 10px;
+    line-height: 1.5;
 }
