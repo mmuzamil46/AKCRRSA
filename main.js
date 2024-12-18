@@ -26,3 +26,4 @@ const showMenu = (toggleId, navId) =>{
         all_content[index].classList.add('active');
     });
  });
+ 
